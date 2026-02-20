@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+            <h6>Laptop Gamer AMD</h6>
+            <p>Precio base: $<span class="precio-inicial"></span> </p>
+
+            <p>Cantidad:
+                <span class="cantidad" id="cantidad">0</span>
+                <button onclick="
+                let span = document.querySelector('#cantidad');   
+                let cantidad =Number(span.innerHTML);
+                let suma = cantidad + 1;
+                span.innerHTML = suma;
+
+                let spanFinal = document.querySelector('.valor-total');
+                let valorFInal=Number(spanFinal.innerHTML);
+                let total= suma * precio; 
+                spanFinal.innerHTML=total; 
+                ">+</button>
+
+                <button onclick=" 
+                let span=document.querySelector('#cantidad'); 
+                let cantidad2=Number(span.innerHTML);
+                let resta=cantidad2 - 1; 
+                span.innerHTML=resta; 
+
+                let spanFinal = document.querySelector('.valor-total');
+                let valorFInal2=Number(spanFinal.innerHTML);
+                let total2= resta * precio; 
+                spanFinal.innerHTML=total2; 
+                ">-</button>
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <div class=" total-section">
+        <p>Total a pagar: $<span class="valor-total">0</span></p>
+    </div>
+
+        <script src="index.js">
+
+
+        </script>
+</body>
+
+</html>
